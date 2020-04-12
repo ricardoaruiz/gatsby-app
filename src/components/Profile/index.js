@@ -24,7 +24,7 @@ const Profile = () => {
 
   return (
     <S.ProfileWrapper>
-      <S.ProfileLink>
+      <S.ProfileLink to="http://www.globo.com">
         <Avatar />
 
         <S.ProfileAuthor>
