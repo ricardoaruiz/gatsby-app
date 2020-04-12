@@ -18,4 +18,4 @@ function Avatar(props) {
   return <S.AvatarWrapper fixed={avatarImage.childImageSharp.fixed} />
 }
 
-export default StyledAvatar
+export default Avatar
