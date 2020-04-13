@@ -7,9 +7,15 @@ import PostItem from "../components/PostItem"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <PostItem background="red" />
-    <PostItem background="blue" />
-    <PostItem background="green" />
+    <PostItem
+      slug="/about"
+      background="blue"
+      category="Misc"
+      date="30 de Julho de 2019"
+      timeToRead="5 minutos de leitura"
+      title="Diga não ao Medium: tenha sua própria plataforma"
+      description="Algumas razões para você ter a sua própria plataforma ao invés de soluções como o Medium."
+    />
   </Layout>
 )
 
