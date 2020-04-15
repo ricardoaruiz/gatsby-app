@@ -8,15 +8,16 @@ const Paginator = props => {
 
   return (
     <S.PaginatorWrapper>
-      <S.PaginatorLink to={prevPage} show={!isFirst}>
-        pagina anterior
-      </S.PaginatorLink>
+      {!isFirst && (
+        <S.PaginatorLink to={prevPage}>pagina anterior</S.PaginatorLink>
+      )}
       <S.PaginatorControl>
         página {currentPage} de {numPages}
       </S.PaginatorControl>
-      <S.PaginatorLink to={nextPage} show={!isLast}>
-        próxima página
-      </S.PaginatorLink>
+
+      {!isLast && (
+        <S.PaginatorLink to={nextPage}>próxima página</S.PaginatorLink>
+      )}
     </S.PaginatorWrapper>
   )
 }

@@ -11,7 +11,6 @@ export const PaginatorWrapper = styled.div`
 export const PaginatorLink = styled(Link)`
   text-decoration: none;
   color: #8899a6;
-  display: ${props => (props.show ? "block" : "none")};
 
   &:hover {
     color: #2aa1f1;
