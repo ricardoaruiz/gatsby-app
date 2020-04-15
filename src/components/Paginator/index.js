@@ -1,4 +1,5 @@
 import React from "react"
+import PropTypes from "prop-types"
 
 import * as S from "./styled"
 
@@ -18,6 +19,15 @@ const Paginator = props => {
       </S.PaginatorLink>
     </S.PaginatorWrapper>
   )
+}
+
+Paginator.propTypes = {
+  numPages: PropTypes.number.isRequired,
+  currentPage: PropTypes.number.isRequired,
+  isFirst: PropTypes.bool.isRequired,
+  isLast: PropTypes.bool.isRequired,
+  prevPage: PropTypes.string.isRequired,
+  nextPage: PropTypes.string.isRequired,
 }
 
 export default Paginator
