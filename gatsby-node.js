@@ -50,6 +50,7 @@ exports.createPages = ({ graphql, actions }) => {
       createPage({
         path: node.fields.slug,
         component: path.resolve("./src/templates/blog-post.js"),
+        // Passando variáveis no contexto da página criada
         context: {
           slug: node.fields.slug,
         },
