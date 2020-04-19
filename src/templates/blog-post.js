@@ -13,7 +13,11 @@ const BlogPost = props => {
 
   return (
     <Layout>
-      <SEO title={post.frontmatter.title} />
+      <SEO
+        title={post.frontmatter.title}
+        description={post.frontmatter.title}
+        image={post.frontmatter.image}
+      />
 
       <S.PostHeader>
         <S.PostDate>
@@ -38,6 +42,7 @@ export const query = graphql`
         description
         date(formatString: "DD [de] MMMM [de] YYYY", locale: "pt-br")
         category
+        image
       }
       html
       timeToRead
