@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: https://github.com/ricardoaruiz/gatsby-app
+  repo: ricardoaruiz/gatsby-app
   branch: master
   site_domain: https://gatsby-app.netlify.app/
 
