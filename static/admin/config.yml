@@ -2,7 +2,7 @@ backend:
   name: github
   repo: ricardoaruiz/gatsby-app
   branch: master
-  site_domain: https://gatsby-app.netlify.app/
+  site_domain: gatsby-app.netlify.app
 
 publish_mode: editorial_workflow
 media_folder: "static/assets/img"
